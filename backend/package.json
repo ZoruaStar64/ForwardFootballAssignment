@@ -1,0 +1,10 @@
+{
+    "name": "forwardfootballassignment",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {},
+    "dependencies": {
+        "@prisma/client": "^6.6.0",
+        "prisma": "^6.6.0"
+    }
+}
