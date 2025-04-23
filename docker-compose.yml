@@ -1,0 +1,50 @@
+services:
+  nextapp:
+    build: 
+      context: ./frontend
+      dockerfile: DockerFile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+      - nodeapp
+    environment:
+      - API_END_POINT=$${API_END_POINT}
+    networks:
+      - next-node
+
+  nodeapp:
+    build: 
+      context: ./backend
+      dockerfile: DockerFile
+    ports:
+      - "8082:8082"
+    depends_on:
+      - postgres
+    environment:
+      - NODE_ENV=$${NODE_ENV}
+    networks:
+      - node-postgres
+      - next-node
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    env_file: "./backend/.env"  
+    environment:
+      - POSTGRES_USER=$${POSTGRES_USER}
+      - POSTGRES_PASSWORD=$${POSTGRES_PASSWORD}
+      - POSTGRES_DB=$${POSTGRES_DB}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - node-postgres
+
+networks:
+  next-node:
+  node-postgres:
+
+volumes:
+  pgdata:
