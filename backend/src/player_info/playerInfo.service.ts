@@ -8,19 +8,8 @@ class PlayerInfoService {
     }
     async getAllPlayerInfo() {
         try {
-            const player_info = await this.prisma.player_info.findMany({
-                select: {
-                    player: true,
-                    dribble_skills: true,
-                    length: true,
-                    width: true,
-                    age: true,
-                    ball_control: true,
-                    passing_under_pressure: true,
-                    team: true,
-                    position: true,
-                },
-            });
+            const player_info = await this.prisma.player_Info.findMany();
+            console.log(player_info);
             return player_info;
         } catch (error) {
             console.error("Error Fetching player data:", error);
@@ -30,7 +19,7 @@ class PlayerInfoService {
 
     async createPlayer(data: any) {
         try {
-            const player = await this.prisma.player_info.create({
+            const player = await this.prisma.player_Info.create({
                 data,
             });
             return player;

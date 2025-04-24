@@ -1,4 +1,4 @@
-const API_END_POINT = process.env.API_END_POINT || "http://localhost:8082";
+const API_END_POINT = process.env.API_END_POINT_URL || "http://localhost:8082";
 
 export const getRequest = async (url: string) => {
     const response = await fetch(`${API_END_POINT}${url}`, {
