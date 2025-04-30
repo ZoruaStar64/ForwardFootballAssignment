@@ -1,0 +1,301 @@
+{
+    "player_Data": [
+      {
+        "player": "Player 1",
+        "dribble_skills": 29.16,
+        "length": 150,
+        "weight": 36.00,
+        "age": 12.38056126,
+        "ball_control": 53,
+        "passing_under_pressure": 37.65,
+        "team": "O13",
+        "position": "RWF"
+      },
+      {
+        "player": "Player 2",
+        "dribble_skills": 30.79,
+        "length": 158,
+        "weight": 48.75,
+        "age": 12.62970568,
+        "ball_control": 61,
+        "passing_under_pressure": 39.99,
+        "team": "O13",
+        "position": "LWF"
+      },
+      {
+        "player": "Player 3",
+        "dribble_skills": 29.53,
+        "length": 156,
+        "weight": 50.05,
+        "age": 12.44079398,
+        "ball_control": 47,
+        "passing_under_pressure": 34.49,
+        "team": "O13",
+        "position": "AF"
+      },
+      {
+        "player": "Player 4",
+        "dribble_skills": 32.3,
+        "length": 162,
+        "weight": 39.3,
+        "age": 13.25393566,
+        "ball_control": 44,
+        "passing_under_pressure": 37.83,
+        "team": "O13",
+        "position": "CB"
+      },
+      {
+        "player": "Player 5",
+        "dribble_skills": 29.73,
+        "length": 165,
+        "weight": 48.4,
+        "age": 13.17727584,
+        "ball_control": 54,
+        "passing_under_pressure": 32.54,
+        "team": "O13",
+        "position": "CB"
+      },
+      {
+        "player": "Player 6",
+        "dribble_skills": 30.19,
+        "length": 167,
+        "weight": 44.9,
+        "age": 14.0862423,
+        "ball_control": 48,
+        "passing_under_pressure": 34.18,
+        "team": "O14",
+        "position": "GK"
+      },
+      {
+        "player": "Player 7",
+        "dribble_skills": 28.01,
+        "length": 155,
+        "weight": 39.3,
+        "age": 13.79603012,
+        "ball_control": 59,
+        "passing_under_pressure": 40.34,
+        "team": "O14",
+        "position": "LWF"
+      },
+      {
+        "player": "Player 8",
+        "dribble_skills": 30.62,
+        "length": 162,
+        "weight": 43.5,
+        "age": 13.90006845,
+        "ball_control": 59,
+        "passing_under_pressure": 36.08,
+        "team": "O14",
+        "position": "RB"
+      },
+      {
+        "player": "Player 9",
+        "dribble_skills": null,
+        "length": null,
+        "weight": null,
+        "age": null,
+        "ball_control": null,
+        "passing_under_pressure": null,
+        "team": "O15",
+        "position": "Unknown"
+      },
+      {
+        "player": "Player 10",
+        "dribble_skills": 30.18,
+        "length": 166,
+        "weight": 51.15,
+        "age": 13.99041752,
+        "ball_control": 64,
+        "passing_under_pressure": 31.48,
+        "team": "O14",
+        "position": "LB"
+      },
+      {
+        "player": "Player 11",
+        "dribble_skills": 29.54,
+        "length": 153,
+        "weight": 37.05,
+        "age": 14.14921287,
+        "ball_control": 73,
+        "passing_under_pressure": 37.42,
+        "team": "O14",
+        "position": "LWF"
+      },
+      {
+        "player": "Player 12",
+        "dribble_skills": 32.7,
+        "length": 178,
+        "weight": 70.65,
+        "age": 14.29705681,
+        "ball_control": 47,
+        "passing_under_pressure": 39.87,
+        "team": "O14",
+        "position": "GK"
+      },
+      {
+        "player": "Player 13",
+        "dribble_skills": 30.84,
+        "length": 167,
+        "weight": 54.1,
+        "age": 14.4202601,
+        "ball_control": 63,
+        "passing_under_pressure": 33.22,
+        "team": "O15",
+        "position": "AM"
+      },
+      {
+        "player": "Player 14",
+        "dribble_skills": 31.25,
+        "length": 171,
+        "weight": 56.3,
+        "age": 15.00068446,
+        "ball_control": 57,
+        "passing_under_pressure": 31.66,
+        "team": "O15",
+        "position": "CM"
+      },
+      {
+        "player": "Player 15",
+        "dribble_skills": null,
+        "length": null,
+        "weight": null,
+        "age": null,
+        "ball_control": null,
+        "passing_under_pressure": null,
+        "team": null,
+        "position": null
+      },
+      {
+        "player": "Player 16",
+        "dribble_skills": 29.14,
+        "length": 168,
+        "weight": 54.25,
+        "age": 15.15400411,
+        "ball_control": 69,
+        "passing_under_pressure": 36.11,
+        "team": "O15",
+        "position": "LWF"
+      },
+      {
+        "player": "Player 17",
+        "dribble_skills": 30.56,
+        "length": 167,
+        "weight": 52.35,
+        "age": 15.27446954,
+        "ball_control": 60,
+        "passing_under_pressure": 33.71,
+        "team": "O15",
+        "position": "RB"
+      },
+      {
+        "player": "Player 18",
+        "dribble_skills": 28.34,
+        "length": 162,
+        "weight": 41.75,
+        "age": 14.0807666,
+        "ball_control": 67,
+        "passing_under_pressure": 36.19,
+        "team": "O14",
+        "position": "CB"
+      },
+      {
+        "player": "Player 19",
+        "dribble_skills": 29.23,
+        "length": 152,
+        "weight": 41.7,
+        "age": 13.3744011,
+        "ball_control": null,
+        "passing_under_pressure": 34.29,
+        "team": "O14",
+        "position": "CM"
+      },
+      {
+        "player": "Player 20",
+        "dribble_skills": 29.24,
+        "length": 169,
+        "weight": 54.15,
+        "age": 14.92950034,
+        "ball_control": 66,
+        "passing_under_pressure": 34.68,
+        "team": "O15",
+        "position": "CM"
+      },
+      {
+        "player": "Player 21",
+        "dribble_skills": 29.1,
+        "length": 162,
+        "weight": 49.55,
+        "age": 13.67008898,
+        "ball_control": 50,
+        "passing_under_pressure": 36.08,
+        "team": "O14",
+        "position": "RWF"
+      },
+      {
+        "player": "Player 22",
+        "dribble_skills": 29.56,
+        "length": 164,
+        "weight": 50.8,
+        "age": 13.5578371,
+        "ball_control": 58,
+        "passing_under_pressure": 21.29,
+        "team": "O14",
+        "position": "CM"
+      },
+      {
+        "player": "Player 23",
+        "dribble_skills": 23.36,
+        "length": 167,
+        "weight": 53.25,
+        "age": 13.79329227,
+        "ball_control": 67,
+        "passing_under_pressure": 37.14,
+        "team": "O14",
+        "position": "CB"
+      },
+      {
+        "player": "Player 24",
+        "dribble_skills": null,
+        "length": 168,
+        "weight": 54.5,
+        "age": 15.02258727,
+        "ball_control": null,
+        "passing_under_pressure": 34.49,
+        "team": "O15",
+        "position": "Unknown"
+      },
+      {
+        "player": "Player 25",
+        "dribble_skills": 28.62,
+        "length": 161,
+        "weight": 48.35,
+        "age": 14.51334702,
+        "ball_control": 60,
+        "passing_under_pressure": 32.44,
+        "team": "O15",
+        "position": "AM"
+      },
+      {
+        "player": "Player 26",
+        "dribble_skills": 29.34,
+        "length": 162,
+        "weight": 46.5,
+        "age": 13.83162218,
+        "ball_control": 53,
+        "passing_under_pressure": 36.6,
+        "team": "O14",
+        "position": "RWF"
+      },
+      {
+        "player": "Player 27",
+        "dribble_skills": 29.87,
+        "length": 159,
+        "weight": 38.9,
+        "age": 14.11362081,
+        "ball_control": 54,
+        "passing_under_pressure": 40.85,
+        "team": "O14",
+        "position": "AM"
+      }
+    ]
+}

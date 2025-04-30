@@ -15,13 +15,13 @@ datasource db {
 }
 
 model Player_Info {
-  player String @id
-  dribble_skills Decimal
-  length Int
-  width Decimal
-  age Float
-  ball_control Int
-  passing_under_pressure Decimal
-  team String
-  position String
+  player String @id @db.VarChar(32)
+  dribble_skills Decimal? @db.Decimal(5, 2)
+  length Int?
+  weight Decimal? @db.Decimal(5, 2)
+  age Float?
+  ball_control Int?
+  passing_under_pressure Decimal? @db.Decimal(5, 2)
+  team String? @db.VarChar(4)
+  position String? @db.VarChar(16)
 }

@@ -1,4 +1,4 @@
-FROM node:22.14.0
+FROM node:22.15.0
 WORKDIR /app
 COPY package*.json ./
 COPY prisma ./prisma/
@@ -8,4 +8,4 @@ COPY . .
 RUN npm run build
 RUN npm run prisma:generate
 EXPOSE 8082
-CMD ["sh", "-c", "npm run prisma:push && npm run start:dev"]
+CMD ["sh", "-c", "npm run prisma:push && npm run prisma:seed && npm run start:dev"]

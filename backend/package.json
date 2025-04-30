@@ -5,14 +5,18 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "run:dev": "set NODE_ENV=development && nodemon src/app.ts",
-        "start:dev": "set NODE_ENV=development && node dist/app.js",
+        "start:dev": "set NODE_ENV=development && node dist/src/app.js",
         "start:prod": "set NODE_ENV=production && nodemon src/app.ts",
         "prisma:format": "dotenv -e .env.development -- npx prisma format",
         "prisma:generate": "dotenv -e .env.development -- npx prisma generate",
         "prisma:migrate": "dotenv -e .env.development -- npx prisma migrate dev",
         "prisma:push": "dotenv -e .env.development -- npx prisma db push",
         "prisma:studio": "dotenv -e .env.development -- npx prisma studio",
+        "prisma:seed": "dotenv -e .env.development -- npx prisma db seed",
         "build": "tsc"
+    },
+    "prisma": {
+        "seed": "ts-node prisma/seed.ts"
     },
     "dependencies": {
         "@prisma/client": "^6.6.0",
@@ -25,9 +29,10 @@
         "@types/cors": "^2.8.17",
         "@types/express": "^5.0.1",
         "@types/morgan": "^1.9.9",
-        "@types/node": "^22.14.1",
-        "typescript": "^5",
+        "@types/node": "^22.15.3",
         "dotenv-cli": "^8.0.0",
-        "prisma": "^6.6.0"
+        "prisma": "^6.6.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5"
     }
 }
