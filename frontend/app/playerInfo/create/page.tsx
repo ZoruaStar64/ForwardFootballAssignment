@@ -1,8 +1,8 @@
-import { getRequest } from "../../service/api";
+import { createPlayer } from "../actions";
 import Link from "next/link";
+import Form from "next/form";
 
 const Page = async () => {
-    const playerInfo = await getRequest("/playerInfo");
     return (
       <div className="relative overflow-x-auto">
         <div className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
@@ -40,29 +40,19 @@ const Page = async () => {
               </th>
             </tr>
           </thead>
-          <tbody>
-            {playerInfo.map((player_data: any) => (
-              <tr
-                key={player_data.player}
-                className="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
-              >
-                <th
-                  scope="row"
-                  className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-                >
-                  <Link href={`playerInfo/${player_data.player}`}>{player_data.player}</Link>
-                </th>
-                <td className="px-6 py-4">{player_data.dribble_skills}</td>
-                <td className="px-6 py-4">{player_data.length}</td>
-                <td className="px-6 py-4">{player_data.weight}</td>
-                <td className="px-6 py-4">{player_data.age}</td>
-                <td className="px-6 py-4">{player_data.ball_control}</td>
-                <td className="px-6 py-4">{player_data.passing_under_pressure}</td>
-                <td className="px-6 py-4">{player_data.team}</td>
-                <td className="px-6 py-4">{player_data.position}</td>
-              </tr>
-            ))}
-          </tbody>
+          {/* Add create form here. */}
+          <Form action={createPlayer}>
+            <input name="player" placeholder="Example: Player 28"></input>
+            <input name="dribble_skills" placeholder="Example: 27.94"></input>
+            <input name="length" placeholder="Example: 178"></input>
+            <input name="weight" placeholder="Example: 40.54"></input>
+            <input name="age" placeholder="Example: 14.74839217"></input>
+            <input name="ball_control" placeholder="Example: 52"></input>
+            <input name="passing_under_pressure" placeholder="Example: 37.47"></input>
+            <input name="team" placeholder="Example: O15"></input>
+            <input name="position" placeholder="Example: LWF"></input>
+            <button type="submit">Add new Player</button>
+          </Form>
         </table>
       </div>
     );

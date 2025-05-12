@@ -1,0 +1,1 @@
+{/* TODO: make this call the delete player backend function and return the user back to /playerInfo */}
