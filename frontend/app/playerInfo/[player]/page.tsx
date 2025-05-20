@@ -11,6 +11,7 @@ const Page = async ({
     return (
       <div className="relative overflow-x-auto">
         <div className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <Link href={`/playerInfo/`}>Go back to player information page</Link>
           <Link href={`/playerInfo/${player}/update`}>Update {player}</Link>
           <Link href={`/playerInfo/${player}/delete`}>Delete {player}</Link>
         </div>
