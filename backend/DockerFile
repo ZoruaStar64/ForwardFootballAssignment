@@ -8,4 +8,4 @@ COPY . .
 RUN npm run build
 RUN npm run prisma:generate
 EXPOSE 8082
-CMD ["sh", "-c", "npm run prisma:push && npm run prisma:seed && npm run start:dev"]
+CMD ["sh", "-c", "if [ \"$SEED_DATABASE\" = true ]; then npm run prisma:push && npm run prisma:seed && npm run start:dev; else npm run prisma:push && npm run start:dev; fi"]

@@ -14,6 +14,8 @@ class PlayerInfoService {
         } catch (error) {
             console.error("Error Fetching player data:", error);
             throw error;
+        } finally {
+            await this.prisma.$disconnect();
         }
     }
 
@@ -29,6 +31,8 @@ class PlayerInfoService {
         } catch (error) {
             console.error("Error Fetching player data:", error);
             throw error;
+        } finally {
+            await this.prisma.$disconnect();
         }
     }
 
@@ -51,6 +55,8 @@ class PlayerInfoService {
         } catch (error) {
             console.error("Error creating player:", error);
             throw error;
+        } finally {
+            await this.prisma.$disconnect();
         }
     }
 
@@ -110,6 +116,8 @@ class PlayerInfoService {
         } catch (error) {
             console.error("Error creating player:", error);
             throw error;
+        } finally {
+            await this.prisma.$disconnect();
         }
     }
 
@@ -125,6 +133,8 @@ class PlayerInfoService {
         } catch (error) {
             console.error("Error Fetching player data:", error);
             throw error;
+        } finally {
+            await this.prisma.$disconnect();
         }
     }
 }
